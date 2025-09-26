@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+venv/
+env/
+*.sqlite3
+
+# Node / React
+node_modules/
+build/
+dist/
+npm-debug.log
+yarn-error.log
+
+# Docker
+*.log
+*.env
+docker-compose.override.yml
+pgdata/
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
