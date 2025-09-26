@@ -2,10 +2,17 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: docker-compose pull
-    command: docker-compose up --build
+  - init: docker compose pull
+    command: docker compose up --build
 ports:
   - port: 8000
     onOpen: open-browser
   - port: 3000
     onOpen: open-browser
+  - port: 5432
+    onOpen: ignore
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-python.vscode-pylance
+    - esbenp.prettier-vscode
